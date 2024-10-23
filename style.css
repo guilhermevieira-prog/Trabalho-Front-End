@@ -1,0 +1,258 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.divider {
+    height: 64px;
+    background-color: #ccc;
+}
+
+#meioAnos90 {
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+    min-height: 500px; /* Altura mínima para permitir a rolagem */
+    display: flex;
+    justify-content: space-between; /* Alinha os elementos */
+    padding: 20px; /* Espaçamento na seção */
+    background-color: #b6aeae; /* Cor de fundo */
+}
+
+#meioAnos90 .header-fixo {
+    position: sticky; /* Mantém o cabeçalho fixo ao rolar */
+    top: 0; /* Posiciona o cabeçalho no topo da seção */
+    background-color: #b6aeae; /* Cor de fundo igual à seção */
+    padding: 10px; /* Espaçamento interno */
+    z-index: 10; /* Garante que o cabeçalho fique acima de outros elementos */
+    text-align: center; /* Centraliza o texto do cabeçalho */
+    width: 100%; /* Certifica-se de que o cabeçalho se estenda por toda a largura da seção */
+}
+
+#meioAnos90 .container {
+    display: flex; /* Flex para alinhar colunas */
+    width: 100%; /* Largura total do container */
+}
+
+#meioAnos90 .conteudoEsquerda {
+    width: 70%; /* Largura do conteúdo principal */
+    padding: 15px; /* Espaçamento interno */
+}
+
+#meioAnos90 .colunaDireita {
+    width: 25%; /* Largura da coluna direita */
+    height: 150px;
+    background-color: #f0f0f0; /* Cor de fundo da coluna */
+    padding: 15px; /* Espaçamento interno */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    margin-left: 20px; /* Espaçamento entre as colunas */
+}
+
+/* Nova regra para o Spacer */
+#meioAnos90 .spacer-container {
+    clear: both; /* Garante que o spacer fique abaixo de ambas as colunas */
+    height: 100px;
+}
+
+#meioAnos90 h2 {
+    font-size: 1.5em; /* Tamanho do título */
+    margin: 0; /* Remove a margem padrão */
+}
+
+
+#FinalAnos90 {
+    display: flex;
+    flex-direction: column; /* Alterado para coluna para permitir o cabeçalho fixo */
+    padding: 20px; /* Espaçamento na seção */
+    background-color: #80D3E6; /* Cor de fundo */
+    opacity: 1; /* Torna a seção visível */
+}
+
+#FinalAnos90 .header-fixo {
+    top: 0; /* Fica no topo da seção */
+    background-color: #6cbada; /* Cor de fundo igual à seção */
+    color: #ffffff; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 5px; /* Reduzido para uma altura menor */
+    font-size: 1.2em; /* Diminui o tamanho da fonte */
+    z-index: 10; /* Fica acima de outros elementos */
+    border: 2px solid #999; /* Borda leve */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para destaque */
+    border-radius: 5px; /* Cantos arredondados */
+    margin-bottom: 10px; /* Espaço abaixo do cabeçalho */
+}
+
+
+#FinalAnos90 .header-fixo h2 {
+    margin: 0; /* Remove a margem padrão */
+    color: #003366; /* Cor do texto contrastante */
+    text-shadow: 1px 1px 1px #ffffff; /* Sombra de texto para destaque */
+}
+
+#FinalAnos90 .header-fixo:hover {
+    background-color: #ffcc33; /* Mudança de cor ao passar o mouse */
+    cursor: pointer; /* Indica que é interativo */
+}
+
+
+#FinalAnos90 .container {
+    display: flex; /* Flex para o container */
+    width: 100%;
+}
+
+#FinalAnos90 .conteudoEsquerda {
+    width: 70%; /* Largura do conteúdo principal */
+    padding: 15px; /* Espaçamento interno */
+    background-color: #A3C1DA; /* Fundo branco */
+    border: 1px solid #ddd; /* Borda leve */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+#FinalAnos90 .colunaDireita {
+    height: 150px;
+    width: 25%; /* Largura da coluna direita */
+    padding: 10px; /* Espaçamento interno */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    background-color: #eff1f1;
+    margin-left: 20px; /* Espaçamento entre as colunas */
+}
+
+#FinalAnos90 h2 {
+    font-size: 1.5em; /* Tamanho do título */
+    margin-bottom: 10px; /* Margem abaixo do título */
+}
+
+#FinalAnos90 .conteudoEsquerda ul {
+    list-style-type: none; /* Remove os marcadores padrão */
+    padding: 0; /* Remove o preenchimento */
+}
+
+#FinalAnos90 .conteudoEsquerda li {
+    margin-bottom: 15px; /* Espaçamento entre os itens da lista */
+}
+
+#FinalAnos90 .conteudoEsquerda h3 {
+    font-weight: bold; /* Deixa o título mais destacado */
+    color: #333; /* Cor do texto do título */
+}
+
+@keyframes piscar {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.piscar {
+    animation: piscar 1s infinite; /* A animação dura 1 segundo e se repete infinitamente */
+}
+
+
+#anos2000 {
+    display: flex;
+    flex-direction: column; /* Flexiona verticalmente para o cabeçalho */
+    padding: 20px; /* Espaçamento na seção */
+    background-color: #eaeaea; /* Cor de fundo suave */
+    border: 2px solid #999; /* Borda sólida */
+    position: relative; /* Necessário para o cabeçalho fixo */
+}
+
+#anos2000 .header-fixo {
+    position: sticky; /* Mantém o cabeçalho fixo ao rolar */
+    top: 0; /* Fica no topo da seção */
+    background: linear-gradient(to right, #0077cc, #005fa3); /* Gradiente azul */
+    color: #ffffff; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 5px; /* Reduzido para uma altura menor */
+    font-size: 1.2em; /* Diminui ainda mais o tamanho da fonte */
+    font-family: 'Verdana', sans-serif; /* Fonte típica dos anos 2000 */
+    z-index: 10; /* Fica acima de outros elementos */
+    border: 2px solid #005fa3; /* Borda azul escura */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para destaque */
+    border-radius: 5px; /* Cantos arredondados */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra no texto */
+    margin-bottom: 10px; /* Espaço abaixo do cabeçalho */
+}
+
+
+
+
+#anos2000 .container {
+    display: flex; /* Flex para alinhar colunas */
+    width: 100%; /* Largura total do container */
+    flex-wrap: wrap; /* Permite que os itens quebrem em novas linhas */
+    margin-top: 20px; /* Espaço acima da seção principal */
+}
+
+#anos2000 .conteudoEsquerda {
+    flex: 1; /* Flexível para ocupar espaço disponível */
+    min-width: 300px; /* Largura mínima */
+    padding: 15px; /* Espaçamento interno */
+    background: linear-gradient(to right, #a2c2e0, #f0f8ff); /* Gradiente de fundo */
+    border: 2px solid #0077cc; /* Borda azul sólida */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    font-family: 'Verdana', sans-serif; /* Fonte típica dos anos 2000 */
+}
+
+#anos2000 .colunaDireita {
+    flex: 1; /* Flexível para ocupar espaço disponível */
+    min-width: 200px; /* Largura mínima */
+    height: auto; /* Altura automática */
+    padding: 15px; /* Espaçamento interno */
+    border: 2px solid #0077cc; /* Borda azul sólida */
+    background-color: #ffffff; /* Fundo branco */
+    margin-left: 20px; /* Espaçamento entre as colunas */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+}
+
+#anos2000 .meuBotao {
+    background-color: #0077cc; /* Azul típico */
+    color: #fff; /* Texto branco */
+    border: none; /* Sem borda */
+    padding: 10px 15px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Mão ao passar o mouse */
+    transition: background-color 0.3s; /* Efeito de transição */
+}
+
+#anos2000 .meuBotao:hover {
+    background-color: #005fa3; /* Azul mais escuro ao passar o mouse */
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+    #anos2000 .container {
+        flex-direction: column; /* Muda para coluna em telas menores */
+    }
+
+    #anos2000 .conteudoEsquerda,
+    #anos2000 .colunaDireita {
+        width: 100%; /* Largura total em dispositivos menores */
+        margin-left: 0; /* Remove margem em dispositivos menores */
+    }
+}
+
+#preferenciasForm {
+    background-color: #f9f9f9; /* Fundo claro */
+    border: 1px solid #0077cc; /* Borda azul */
+    border-radius: 8px; /* Cantos arredondados */
+    padding: 10px; /* Espaçamento interno */
+}
+
+#preferenciasForm label {
+    display: block; /* Faz cada label ocupar uma linha inteira */
+    margin-bottom: 5px; /* Espaçamento entre labels */
+}
+
+
+
+
+
